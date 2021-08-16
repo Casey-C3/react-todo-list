@@ -1,13 +1,87 @@
-body {
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  
+  
+}
+body {
+  background-color: #d3d3d3 ;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.container {
+  width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 5px solid black;
+}
+.input {
+  padding-top: 20px;
+  display: flex;
+  justify-content:space-evenly;
+  margin-bottom:20px;
+
+  
+}
+.input__button {
+  display: inline-block;
+  border-style: none;
+  cursor: pointer;
+  background: green;
+  color: #fff;
+  font-size: 15px;
+  font-family: inherit;
+  padding: 8px 5px;
+  text-decoration: none;
+  border-radius: 5px;
+ 
+}
+
+.input__button:active {
+  transform: scale(0.99);
+}
+.input__text {
+  width: 80%;
+  
+  padding: 10px;
+  
+}
+.todo {
+  display: flex;
+  justify-content: space-between;
+  
+  border-bottom: 1px solid black ;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color:whitesmoke;
+  outline-style: none;
+  font-size: 11px;
+  border-left:5px solid red; 
+  
+
+  
+  
+  
+  
+}
+p {
+  word-break: break-all;
+}
+.trash {
+  color: red;
+  cursor: pointer;
+  
+
+}
+.trash:hover {
+  color: black;
+}
+
+.todo-completed {
+  text-decoration: line-through;
+  border-left: 5px solid green;
 }
