@@ -1,9 +1,6 @@
 import {FaTrash } from 'react-icons/fa'
 
 const ToDo = ({todos,onDelete,onToggle,filteredList}) => {
-
-   
-   
     return (
         <>
         

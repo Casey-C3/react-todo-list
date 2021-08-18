@@ -1,8 +1,4 @@
 import { useState } from 'react'
-
-
-
-
 const Form = ({onAdd}) => {
     const[text,setText] = useState('')
     const[error,setError] = useState(false)
@@ -19,9 +15,6 @@ const Form = ({onAdd}) => {
         }
         onAdd({text})
         setText('')
-        
-
-        
     }
         
     
