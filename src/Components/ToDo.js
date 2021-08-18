@@ -1,23 +1,21 @@
 import {FaTrash } from 'react-icons/fa'
 
-const ToDo = ({todos,onDelete,onToggle}) => {
+const ToDo = ({todos,onDelete,onToggle,filteredList}) => {
 
    
    
     return (
         <>
         
-            {todos.map(todo => 
+            {filteredList.map(todo => 
                 
-                <div onDoubleClick={() => onToggle(todo.id)}
-                    
+                <div onDoubleClick={() => onToggle(todo.id)}    
                     className={`todo ${todo.complete ? 'todo-completed' : ''}`}
                     key ={todo.id} >
-                        <p>{todo.text} </p>
+                        <h2>{todo.text} </h2>
                         <div>
                             <FaTrash className='trash' onClick={() => onDelete(todo.id)}/>
                         </div>
-                    
                 </div>
                 
     
